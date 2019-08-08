@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin: 0px;
+    font-family: 'segoe ui';
+    font-size: 17px;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+
+/*NAVBAR*/
+
+.nav {
+    height: 50px;
+    width: 100%;
+    background-color: #4d4d4d;
+    position: relative;
+}
+
+.nav>.nav-header {
+    display: inline;
+}
+
+.nav>.nav-header>.nav-title {
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+}
+
+.nav>.nav-btn {
+    display: none;
+}
+
+.nav>.nav-links {
+    float: right;
+    font-size: 15px;
+}
+
+.nav>.nav-links>a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+}
+
+.nav>.nav-links>a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav>#nav-check {
+    display: none;
+}
+
+@media (max-width:600px) {
+    .nav>.nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+    .nav>.nav-btn>label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+    .nav>.nav-btn>label:hover,
+    .nav #nav-check:checked~.nav-btn>label {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav>.nav-btn>label>span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+    .nav>.nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #333;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+    .nav>.nav-links>a {
+        display: block;
+        width: 100%;
+    }
+    .nav>#nav-check:not(:checked)~.nav-links {
+        height: 0px;
+    }
+    .nav>#nav-check:checked~.nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+}
+
+
+/*END NAVBAR*/
+
+
+/*LANDING PAGE*/
+
+#showcase {
+    background-image: url(../img/boat_sea.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+p {
+    font-size: 20px;
+}
+
+.button {
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffffff;
+    border: #ffffff 1px solid;
+    padding: 5px 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background: #535df0;
+    color: #fff;
+}
+
+#section-a {
+    padding: 20px;
+    background: #926239;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#section-b {
+    padding: 20px;
+    background: rgb(53, 202, 86);
+    ;
+    text-align: center;
+}
+
+#section-d {
+    padding: 20px;
+    background: rgb(53, 202, 86);
+    ;
+    text-align: center;
+}
+
+#title-maps {
+    color: #333;
+}
+
+#section-c {
+    display: flex;
+}
+
+#section-c div {
+    padding: 20px;
+}
+
+#section-c .box-1,
+#section-c .box-3 {
+    background: #926239;
+    color: #fff;
+}
+
+#section-c .box-2 {
+    background: rgb(53, 202, 86);
+    ;
+}
+
+
+/*END LANDING PAGE*/
+
+
+/*Table price*/
+
+#tabla-precios {
+    display: inline-block;
+    width: 100%;
+    margin-top: 50px
+}
+
+
+/*Columnas*/
+
+.precio-col {
+    display: inline-block;
+    background-color: #795f5f;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    box-shadow: 0px 2px 5px #ddd
+}
+
+@media screen and (min-width:768px) {
+    .precio-col {
+        width: 32%;
+        float: left;
+        margin-right: 2%
+    }
+    .precio-col:last-child {
+        margin-right: 0
+    }
+}
+
+
+/*Headers*/
+
+.precio-col-header {
+    background-color: #333;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px
+}
+
+.precio-col:nth-child(2) .precio-col-header {
+    background-color: #dd9933
+}
+
+.precio-col-header h3 {
+    color: #f3f3f3;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 0
+}
+
+.precio-col-header p {
+    text-align: center;
+    color: #f3f3f3;
+    font-size: 14px;
+    margin-bottom: 0
+}
+
+
+/*Características*/
+
+.precio-col-features {
+    padding: 0 20px 20px 20px
+}
+
+.precio-col-features p {
+    padding: 20px 0;
+    margin: 0;
+    text-align: center;
+    border-top: 1px solid #ddd
+}
+
+.precio-col-features p:first-child,
+.precio-col-features p:last-child {
+    border-top: none
+}
+
+
+/*Comprar*/
+
+.precio-col-comprar {
+    padding: 10px;
+    max-width: 250px;
+    text-align: center;
+    background-color: #dd9933;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+    border: 2px solid #dd9933;
+    transition: all 0.3s
+}
+
+.precio-col-comprar a {
+    color: #f3f3f3;
+    padding: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: all 0.3s
+}
+
+.precio-col-comprar:hover {
+    background-color: #f3f3f3;
+    transition: all 0.3s
+}
+
+.precio-col-comprar:hover a {
+    color: #dd9933;
+    transition: all 0.3s
+}
+
+
+/*end Table price*/

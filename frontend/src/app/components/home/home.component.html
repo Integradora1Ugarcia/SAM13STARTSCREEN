@@ -1,0 +1,90 @@
+<header id="showcase">
+    <h1>Bienvenido a Muelle 13</h1>
+    <p>El restaurante que ofrece los mejores maricos a buen precio y excelente servivio.</p>
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Read More</a>
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div>
+</header>
+<!--
+<section id="section-a">
+    <div *ngFor="let photo of photoService.photos">
+        <div class="col s5 m5 9">
+            <div id="tabla-precios">
+                <div class="precio-col">
+                    <div class="precio-col-header">
+                        {{ photo.title }}
+                    </div>
+                    <div class="precio-col-features">
+                        <img class="responsive-img" src="{{ photo.imageURL }}" alt="{{ photo.title }}">
+                    </div>
+                    <div class="precio-col-comprar">
+                        <a>Pedir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+-->
+
+<!-- Swiper -->
+<div *ngFor="let photo of photoService.photos">
+    <div class="carousel carousel-slider">
+        <a class="carousel-item"><img src="{{ photo.imageURL }}" alt="{{ photo.title }}"></a>
+    </div>
+</div>
+
+
+
+
+<section id="section-d">
+    <h5 class="white-text">Ubicación del establecimiento</h5>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14908.569095690891!2d-100.7507007!3d20.9065949!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8e0d7d1ef5d1d4e8!2sMuelle+13!5e0!3m2!1ses-419!2smx!4v1558909671600!5m2!1ses-419!2smx" width="100%"
+        height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+</section>
+
+<footer class="page-footer orange">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Company Bio</h5>
+                <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.
+                </p>
+
+
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Settings</h5>
+                <ul>
+                    <li><a class="white-text" href="#!">Link 1</a></li>
+                    <li><a class="white-text" href="#!">Link 2</a></li>
+                    <li><a class="white-text" href="#!">Link 3</a></li>
+                    <li><a class="white-text" href="#!">Link 4</a></li>
+                </ul>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Connect</h5>
+                <ul>
+                    <li><a class="white-text" href="#!">Link 1</a></li>
+                    <li><a class="white-text" href="#!">Link 2</a></li>
+                    <li><a class="white-text" href="#!">Link 3</a></li>
+                    <li><a class="white-text" href="#!">Link 4</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+        </div>
+    </div>
+</footer>
