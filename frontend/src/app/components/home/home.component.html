@@ -13,7 +13,7 @@
         </div>
     </div>
 </header>
-<!--
+
 <section id="section-a">
     <div *ngFor="let photo of photoService.photos">
         <div class="col s5 m5 9">
@@ -33,14 +33,44 @@
         </div>
     </div>
 </section>
--->
 
-<!-- Swiper -->
-<div *ngFor="let photo of photoService.photos">
-    <div class="carousel carousel-slider">
-        <a class="carousel-item"><img src="{{ photo.imageURL }}" alt="{{ photo.title }}"></a>
+<section id="section-a">
+    <div *ngFor="let photo of photoService.photos">
+        <!-- Flickity HTML init -->
+        <div class="carousel js-flickity">
+            <!-- images from unsplash.com -->
+            <div class="carousel-cell">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" alt="orange tree" />
+            </div>
+            <div class="carousel-cell">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" alt="submerged" />
+            </div>
+            <div class="carousel-cell">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" alt="look-out" />
+            </div>
+            <div class="carousel-cell">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" alt="One World Trade" />
+            </div>
+            <div class="carousel-cell">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" alt="drizzle" />
+            </div>
+            <div class="carousel-cell">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" alt="cat nose" />
+            </div>
+            <div class="carousel-cell">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" alt="contrail" />
+            </div>
+            <div class="carousel-cell">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" alt="golden hour" />
+            </div>
+            <div class="carousel-cell">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" alt="flight formation" />
+            </div>
+        </div>
+
+
     </div>
-</div>
+</section>
 
 
 
@@ -87,4 +117,5 @@
             Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
         </div>
     </div>
+
 </footer>
